@@ -31,8 +31,8 @@ a {
 }
 
 body {
-    
-    background-image: url('assets/test.webp');
+    background-color: #7c7979;
+    /* background-image: url('assets/test.webp'); */
     background-position: center;
     background-repeat:  repeat;
     background-size: 520vh;
@@ -166,7 +166,6 @@ LANDING
     font-weight: bold;
     color: #4300fa;
     z-index: 100;
-    margin-;
     text-shadow: 2px 2px 3px black;
 }
 
@@ -201,7 +200,7 @@ LANDING
     max-width: 500px;
     width: 90%;
     height: 50px;
-    box-shadow: 0 5px 20px #4300fa;
+    /* box-shadow: 0 5px 20px #4300fa; */
     margin-top: 20px;
     font-size: 18px;
     color: black;

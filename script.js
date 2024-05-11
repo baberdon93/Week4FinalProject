@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function displayMovies(movies) {
         if (movies.length === 0) {
             movieElement.innerHTML = '<p>No movies found</p>';
-            return;
+           return;
         }
         const moviesToShow = movies.slice(0, numResultsDisplayed);
         const html = moviesToShow.map(movie => createMovieHTML(movie)).join('');

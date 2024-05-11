@@ -1,63 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie Description Page
-    </title>
-    <script src="index.js"></script>
-    <script src="script2.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Information</title>
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+</head>
+<body>
     <div class="overlay" id="overlay">
         <div class="spinner"></div>
     </div>
-  <div id="content">  
-    <section>
-    <nav>
-        <figure>
-            <img
-            id="personal-logo"
-            src="assets/LOGO.png"
-            alt=""
-            />
-        </figure>
-        <ul class="nav__link--list">
-            <li class="nav__link">
-                <a
-                    href="index.html"
-                    class="nav__link--anchor2 link__hover-effect link__hover-effect--black"
-                    >Home</a
-                >
-                </li>
-            <li class="nav__link">
-            <a
-                href="#"
-                class="nav__link--anchor link__hover-effect link__hover-effect--black"
-                >About</a
-            >
-            </li>
-            <li class="nav__link">
-            <a
-                href="#" 
-                class="nav__link--anchor 
-                link__hover-effect 
-                link__hover-effect
-                link__hover-effect--black"
-                >Contact</a
-            >
-            </li>
-        </ul>
-        </nav>
-    </section>
-    <section>
-        <div class="movie__info--row">
-            <div class="movie__info--container">
-                
+
+    <div id="content">  
+        <section>
+            <nav>
+                <figure>
+                    <img id="personal-logo" src="assets/LOGO.png" alt="">
+                </figure>
+                <ul class="nav__link--list">
+                    <li class="nav__link">
+                        <a href="index.html" class="nav__link--anchor2 link__hover-effect link__hover-effect--black">Home</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        
+        <section>
+            <div class="movie__info--row">
+                <div class="movie__info--container">
+                    <!-- Move content @script.js -->
+                </div>
             </div>
-        </div>
-    </section>
-  </div>  
-  </body>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="script2.js"></script>
+</body>
 </html>
