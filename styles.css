@@ -108,7 +108,13 @@ nav {
     font-weight: 700;
     background-color: #4300fa;
     padding: 4px 6px;
-    border-radius: 10px;
+    border-radius: 100px;
+    translate: all 450ms ease;
+ }
+ .nav__link--anchor2:hover {
+    font-size: 20px;
+    color: #4300fa;
+    background-color: #ffffff;
  }
  
 
@@ -117,6 +123,7 @@ nav {
     max-width: 1200px;
     display: flex;
     flex-direction: row;
+    
 }
 
 .link__hover-effect {
@@ -154,7 +161,7 @@ LANDING
     width: 100%;
     background-color: rgba(0, 0, 0, 0.541);
     padding: 16px 0;
-    border-radius: 40px;
+    border-radius: 20px;
 }
 
 .landing__header {
@@ -220,7 +227,7 @@ LANDING
 
 .input__btn {
     position: absolute;
-    background-color: #7558f8;
+    background-color: #4300fa;
     color: white;
     border: none;
     height: 75%;
@@ -259,6 +266,7 @@ MOVIE BOX STYLING
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    border-radius: 20px;
 }
 
 .movie {
@@ -266,7 +274,7 @@ MOVIE BOX STYLING
     height: 100%;
     max-width: 33%;
     margin: 80px 0;
-    
+    border-radius: 20px;
 }
 
 .movie__img {
@@ -275,12 +283,19 @@ MOVIE BOX STYLING
     max-height: 450px;
     max-width: 300px;
     position: relative;
-    box-shadow:0px 0px 10px 0 #0000006e
+    box-shadow:0px 0px 10px 0 #000000;
+    border-radius: 20px;
+    
 }
-
+.img2 {
+    border-radius: 20px;
+    width: 100%;
+    max-height: 438px;
+}
 .movie__img:hover {
     transform: scale(1.1);
     transition: all 1000ms ease;
+    border-radius: 20px;
 }
 
 
@@ -303,6 +318,7 @@ img {
     background-color: rgba(66, 66, 66, 0.849);
     opacity: 0;
     transition: all 300ms ease;
+    border-radius: 20px;
 }
 
 .movie__content:hover {
@@ -314,11 +330,11 @@ img {
     color: black;
     font-weight: bold;
     cursor: pointer !important;
-    transition: all 300ms ease;
+    transition: all 450ms ease;
 }
 
 .movie__info:hover {
-    transform: scale(1.2);
+    transform: scale(1.5);
     color: #4300fa;
 }
 
@@ -377,7 +393,7 @@ h2 {
     font-size: 16px;
     display: flex;
     transform: translateY(-50px);
-    background-color: #7558f8;
+    background-color: #4300fa;
     color: white;
     border: none;
     height: 75%;
@@ -411,7 +427,6 @@ h2 {
 .shape2 {
     position: sticky;
     width: 35px;
-    height: px;
     margin: none;
     z-index: 0;
  }
@@ -425,19 +440,19 @@ h2 {
     left: -500vw;
  }
  .shape--2 {
-    top: 15vh;
+    bottom: 100vh;
     left: 80vw;
  }
  .shape--3 {
-    top: 55vh;
+    top: 48vh;
     right: 80vw;
  }
  .shape--4 {
-    top: 55vh;
+    top: 50vh;
     left: 50vw;
  }
  .shape--5 {
-    top: 55vh;
+    top: 47vh;
     left: 80vw;
  }
  .shape--6 {

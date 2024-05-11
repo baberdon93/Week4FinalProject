@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function createMovieHTML(movie) {
         return `<div class="movie">
             <div class="movie__img">
-                <img src="${movie.Poster}" alt="">
+                <img class="img2" src="${movie.Poster}" alt="">
                 <div class="movie__content">
                     <h1 class="title">${movie.Title}</h1>
                     <h1>${movie.Year}</h1>
