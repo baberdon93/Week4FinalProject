@@ -195,7 +195,7 @@ LANDING
     transform: translateX(-50%);
     max-width: 600px;
     width: calc(100% - 32px); 
-    top: 13%;
+    top: 10%;
     background-color: rgba(0, 0, 0, 0.541);
     padding: 16px 0;
     border-radius: 20px;
@@ -575,7 +575,34 @@ small phones and tablets
     .movie {
         max-width: calc(100% / 2);
     }
+    .movie__info--wrapper {
+        width: 100%;
+    }
+    
 }
+@media (max-width: 900px) {
+    .movie__info--wrapper {
+        width: 100%;
+    }
+    .movie__info--container {
+        display: flex;
+        flex-direction: column;
+    }
+    .movie__info--wrapper {
+        text-align: center;
+        margin-top: 60px;
+    }
+    
+}
+@media (max-width: 4000px) {
+    #magnifyButton {
+        display: none;
+        font-size: 20px;
+        padding: 4px 8px;
+    }
+    
+}
+
 
 @media (max-width: 648px) {
     .movie {
@@ -586,6 +613,17 @@ small phones and tablets
     }
     .landing__sub-title {
         font-size: 16px;
+    }
+    #magnifyButton {
+        display: block;
+        position: absolute;
+        font-size: 20px;
+        padding: 8px 8px;
+        right: 7%;
+       
+    }
+    .input__btn {
+        display: none;
     }
     
 }
@@ -617,6 +655,9 @@ small phones and tablets
     .nav__link--list {
         background-color: transparent;
     }
+
+  
+    
 
 }
 
