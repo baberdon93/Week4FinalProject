@@ -11,7 +11,8 @@
         <div class="spinner"></div>
     </div>
 
-    <header>
+    <header class="nav-search__background-img">
+        <div>
         <nav>
             <figure>
                 <img id="personal-logo" src="assets/LOGO.png" alt="">
@@ -28,6 +29,30 @@
                 </li>
             </ul>
         </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="search__wrapper">
+                        <h1 class="landing__header">
+                            It's Movie Time!
+                        </h1>
+                        <h3 class="landing__sub-title">
+                            Search for your favorite movie here!
+                        </h3>
+                        <div class="search__container">
+                            <input type="text" id="searchInput" class="search__bar" placeholder="Search Movie Title">
+                            <button class="input__btn" id="searchButton">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="movie__row">
+            <div class="movie__wrapper"></div>
+        </div>
+        
     </header>
 
     <section id="landing" onmousemove="moveBackground(event)">
@@ -41,27 +66,8 @@
         <img src="assets/soda-clipart-movie-theater-2.png" class="shape2 shape--7">
         <img src="assets/popcorn-clipart-simple-4.png" class="shape shape--8">
         
-        <div class="container">
-            <div class="row">
-                <div class="search__wrapper">
-                    <h1 class="landing__header">
-                        It's Movie Time!
-                    </h1>
-                    <h3 class="landing__sub-title">
-                        Search for your favorite movie here!
-                    </h3>
-                    <div class="search__container">
-                        <input type="text" id="searchInput" class="search__bar" placeholder="Search Movie Title">
-                        <button class="input__btn" id="searchButton">
-                            Search
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="movie__row">
-            <div class="movie__wrapper"></div>
-        </div>
+        
+        
     </section>
 
     <script src="script.js" defer></script>

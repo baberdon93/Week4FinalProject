@@ -31,8 +31,7 @@ a {
 }
 
 body {
-    background-color: #7c7979;
-    /* background-image: url('assets/test.webp'); */
+    background-color: #7c797973;
     background-position: center;
     background-repeat:  repeat;
     background-size: 520vh;
@@ -56,6 +55,14 @@ li {
 NAV
 
 */
+.nav-search__background-img {
+    background-image: url('assets/Movie-background.webp');
+    background-size: cover; /* or 'contain' depending on your preference */
+    background-position: center;
+    height: 320px; /* You can use another unit like 'vh' for better responsiveness */
+    z-index: 10000;
+}
+
 
 .nav__logo {
     width: 100px;
@@ -157,8 +164,12 @@ LANDING
 */
 
 .search__wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     max-width: 600px;
-    width: 100%;
+    width: calc(100% - 32px); 
+    top: 13%;
     background-color: rgba(0, 0, 0, 0.541);
     padding: 16px 0;
     border-radius: 20px;
@@ -171,7 +182,7 @@ LANDING
     text-align: center;
     font-size: 48px;
     font-weight: bold;
-    color: #4300fa;
+    color: #d79965;
     z-index: 100;
     text-shadow: 2px 2px 3px black;
 }
@@ -183,7 +194,7 @@ LANDING
     text-align: center;
     font-size: 24px;
     text-transform: uppercase;
-    color: #7558f8;
+    color: #d79965;
     
     text-shadow: 1px 1px 3px black;
 }
@@ -261,7 +272,8 @@ MOVIE BOX STYLING
 */
 
 .movie__wrapper {
-    margin-top: 30px;
+    position: absolute;
+    top: 300px; /* Adjust as needed */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -440,7 +452,7 @@ h2 {
     left: -500vw;
  }
  .shape--2 {
-    bottom: 100vh;
+    top: 10vh;
     left: 80vw;
  }
  .shape--3 {
@@ -448,7 +460,7 @@ h2 {
     right: 80vw;
  }
  .shape--4 {
-    top: 50vh;
+    top: 45vh;
     left: 50vw;
  }
  .shape--5 {
