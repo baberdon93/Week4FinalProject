@@ -1,4 +1,4 @@
-const scaleFactor = 1 / 20;
+const scaleFactor = 1 / 10;
 
 function moveBackground(event) {
   const shapes = document.querySelectorAll(".shape, .shape2");
