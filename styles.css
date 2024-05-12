@@ -17,11 +17,11 @@ h1 {
     margin-bottom: 16px;
     color: white !important;
     font-size: 80px;
-  color: #fff;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 @-webkit-keyframes glow {
     from {
@@ -43,7 +43,6 @@ h1 {
     font-size: 28px;
     font-weight: 600;
     line-height: 1;
-    /* text-shadow: 1px 1px 10px #d79965; */
 }
 
 a {
@@ -76,17 +75,29 @@ NAV
 
 */
 .nav-search__background-img {
+    position: relative;
     background-image: url('assets/Movie-background.webp');
-    background-size: cover; /* or 'contain' depending on your preference */
+    background-size: cover; 
     background-position: center;
-    height: 320px; /* You can use another unit like 'vh' for better responsiveness */
+    height: 320px; 
     z-index: 10000;
+    
+}
+.nav-search__background-img::after, .nav-search__background-img2::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 20%;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(204, 203, 202, 0.966));
 }
 .nav-search__background-img2 {
+    position: relative;
     background-image: url('assets/Movie-background.webp');
-    background-size: cover; /* or 'contain' depending on your preference */
+    background-size: cover; 
     background-position: center;
-    height: 12vh; /* You can use another unit like 'vh' for better responsiveness */
+    height: 12vh; 
     z-index: 0;
 }
 
